@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         GetWeatherJSON json = new GetWeatherJSON();
-        json.execute("https://api.openweathermap.org/data/2.5/weather?q="+editText.getText()+"&appid=a9f0de43f7ae80b8312ceb33a386b6b3&units=metric").get();
+        json.execute("https://api.openweathermap.org/data/2.5/weather?q="+editText.getText()+"&appid=YOURAPIKEY&units=metric").get();
 
 
 
