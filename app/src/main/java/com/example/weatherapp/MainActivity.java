@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         GetWeatherJSON json = new GetWeatherJSON();
         try {
             String encodedString = URLEncoder.encode(editText.getText().toString(), "UTF-8");
-            json.execute("https://api.openweathermap.org/data/2.5/weather?q=" + encodedString + "&appid=a9f0de43f7ae80b8312ceb33a386b6b3&units=metric").get();
+            json.execute("https://api.openweathermap.org/data/2.5/weather?q=" + encodedString + "&appid=YOURAPIKEY&units=metric").get();
 
             InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
             inputMethodManager.hideSoftInputFromWindow(editText.getWindowToken(), 0);
